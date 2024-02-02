@@ -3,7 +3,7 @@ import { FaRegUser, FaShoppingBasket, FaSearch } from 'react-icons/fa';
 
 function Header() {
   return (
-    <div className="flex items-center justify-between mx-3 my-2 bg-transparent">
+    <div className="fixed flex items-center justify-between w-full mx-3 my-2 bg-transparent">
       <div className="flex justify-between gap-16">
         <img
           className="h-14"

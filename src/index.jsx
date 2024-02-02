@@ -19,8 +19,8 @@ const root = createRoot(document.getElementById('app'));
 root.render(
   <>
     <Header />
-    {/* <Banner />
-    <Categories />
+    <Banner />
+    {/*  <Categories />
     <TopSales />
     <ProductsDivider />
     <Blogs />
