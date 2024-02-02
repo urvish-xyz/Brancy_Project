@@ -10,33 +10,21 @@ function Header() {
           src="https://template.hasthemes.com/brancy/brancy/assets/images/logo.webp"
           alt="Logo"
         />
-        <div className="flex items-center">
-          <ul className="flex gap-3">
-            <li>
-              <a href="#">Home</a>
-            </li>
-            <li>
-              <a href="#">About</a>
-            </li>
-            <li>
-              <a href="#">Shop</a>
-            </li>
-            <li>
-              <a href="#">Blog</a>
-            </li>
-            <li>
-              <a href="#">Pages</a>
-            </li>
-            <li>
-              <a href="#">Contact</a>
-            </li>
+        <div className="flex items-center max-md:hidden">
+          <ul className="flex font-semibold gap-7">
+            <li className="hover:text-[#ff6565] cursor-pointer">Home</li>
+            <li className="hover:text-[#ff6565] cursor-pointer">About</li>
+            <li className="hover:text-[#ff6565] cursor-pointer">Shop</li>
+            <li className="hover:text-[#ff6565] cursor-pointer">Blog</li>
+            <li className="hover:text-[#ff6565] cursor-pointer">Pages</li>
+            <li className="hover:text-[#ff6565] cursor-pointer">Contact</li>
           </ul>
         </div>
       </div>
       <div className="flex mx-5 text-xl gap-9">
-        <FaSearch />
-        <FaShoppingBasket />
-        <FaRegUser />
+        <FaSearch className="hover:text-[#ff6565] cursor-pointer" />
+        <FaShoppingBasket className="hover:text-[#ff6565] cursor-pointer" />
+        <FaRegUser className="hover:text-[#ff6565] cursor-pointer" />
       </div>
     </div>
   );
