@@ -4,7 +4,7 @@
 
 @layer components {
   .badge {
-    @apply absolute -top-2 right-0 -rotate-90 px-4 py-2 rounded-full;
+    @apply absolute right-0 px-4 py-2 -rotate-90 rounded-full -top-2;
 
     &--red {
       @apply bg-red-300;
@@ -18,6 +18,14 @@
   }
 
   .card {
-    @apply flex flex-col gap-4 items-center justify-center max-w-48 aspect-4/3 md:aspect-3/4 rounded-2xl relative my-6;
+    @apply relative flex flex-col items-center justify-center gap-4 my-6 max-w-48 aspect-4/3 md:aspect-3/4 rounded-2xl;
   }
+}
+
+.flip-card {
+  transition: transform 0.5s;
+}
+
+.flip-container:hover .flip-card {
+  transform: rotateY(360deg);
 }
