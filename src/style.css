@@ -4,7 +4,7 @@
 
 @layer components {
   .badge {
-    @apply absolute right-0 px-4 py-2 -rotate-90 rounded-full -top-2;
+    @apply absolute right-0 px-4 py-2 font-semibold text-white -rotate-90 rounded-full -top-4;
 
     &--red {
       @apply bg-red-300;
@@ -13,8 +13,10 @@
     &--green {
       @apply bg-green-300;
     }
-  }
-  .btn {
+
+    &--purple {
+      @apply bg-purple-600;
+    }
   }
 
   .card {
@@ -23,9 +25,10 @@
 }
 
 .flip-card {
-  transition: transform 0.5s;
+  transition: transform 0.5s ease;
 }
 
 .flip-container:hover .flip-card {
-  transform: rotateY(360deg);
+  transform: rotateY(1turn);
+  /* transform: rotateY(360deg); */
 }

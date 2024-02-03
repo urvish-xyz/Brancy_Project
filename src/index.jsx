@@ -9,7 +9,6 @@ import ProductsDivider from './containers/ProductsDivider';
 import Blogs from './containers/Blogs';
 import JoinUs from './containers/JoinUs';
 import Footer from './containers/Footer';
-import Card from './card';
 
 // Clear the existing HTML content
 document.body.innerHTML = '<div id="app"></div>';

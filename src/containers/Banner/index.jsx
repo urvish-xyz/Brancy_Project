@@ -2,11 +2,11 @@ import React from 'react';
 
 function Banner() {
   return (
-    <div className="flex items-center h-[130vh] max-sm:flex-col ">
+    <div className="flex items-center min-h-[130vh] max-sm:flex-col ">
       {/* Left side content */}
       <div className="flex flex-col items-center w-1/2">
-        <div className="relative flex flex-col items-start justify-center flex-1 px-32 mt-52">
-          <div className="absolute -top-24 w-[330px] -z-10">
+        <div className="relative flex flex-col items-start justify-center flex-1 lg:px-32 mt-52">
+          <div className="absolute -top-24 -z-10">
             <img
               src="https://template.hasthemes.com/brancy/brancy/assets/images/slider/text-theme.webp"
               alt=""
@@ -30,9 +30,9 @@ function Banner() {
       </div>
 
       {/* right side image */}
-      <div className="w-1/2 h-full bg-[#d9f1e1] items-center flex">
+      <div className="w-1/2 max-h-[130vh] bg-[#d9f1e1] items-center flex max-sm:w-full">
         <img
-          className="w-[50vw] right-40 max-md:right-0 max-sm:w-full"
+          className="w-full right-40 max-md:right-0"
           src="https://template.hasthemes.com/brancy/brancy/assets/images/slider/slider1.webp"
           alt=""
         />
