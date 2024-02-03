@@ -30,7 +30,7 @@ function Banner() {
       </div>
 
       {/* right side image */}
-      <div className="w-1/2 max-h-[130vh] bg-[#d9f1e1] items-center flex max-sm:w-full">
+      <div className="w-1/2 max-h-[130vh] min-h-[100vh] bg-[#d9f1e1] items-center flex max-sm:w-full">
         <img
           className="w-full right-40 max-md:right-0"
           src="https://template.hasthemes.com/brancy/brancy/assets/images/slider/slider1.webp"

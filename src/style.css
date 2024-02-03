@@ -4,7 +4,7 @@
 
 @layer components {
   .badge {
-    @apply absolute right-0 px-4 py-2 font-semibold text-white -rotate-90 rounded-full -top-4;
+    @apply absolute right-0 z-50 px-4 py-2 font-semibold text-white -rotate-90 rounded-full -top-4;
 
     &--red {
       @apply bg-red-300;
@@ -21,6 +21,21 @@
 
   .card {
     @apply relative flex flex-col items-center justify-center gap-4 my-6 max-w-48 aspect-4/3 md:aspect-3/4 rounded-2xl;
+  }
+  .product-badge {
+    @apply absolute z-50 px-4 py-2 font-semibold text-white rounded-full right-5 top-4;
+
+    &--red {
+      @apply bg-red-300;
+    }
+
+    &--green {
+      @apply bg-green-300;
+    }
+
+    &--purple {
+      @apply bg-purple-600;
+    }
   }
 }
 
