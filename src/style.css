@@ -38,7 +38,21 @@
     }
   }
 }
+.BlogPost-label {
+  @apply px-5 py-2 text-white rounded-full w-fit;
 
+  &--red {
+    @apply bg-red-300;
+  }
+
+  &--green {
+    @apply bg-green-300;
+  }
+
+  &--purple {
+    @apply bg-purple-600;
+  }
+}
 .flip-card {
   transition: transform 0.5s ease;
 }
