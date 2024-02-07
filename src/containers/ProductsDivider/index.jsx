@@ -5,7 +5,7 @@ import ImageDiv from '../../components/ImageDiv';
 
 function ProductsDivider() {
   return (
-    <div className="flex flex-wrap items-center justify-center w-full h-auto gap-10">
+    <div className="container flex flex-wrap items-center justify-center h-auto gap-10">
       <Products
         ProductTitle="Readable content DX22"
         badge="new"

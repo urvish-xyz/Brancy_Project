@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaRegUser, FaShoppingBasket, FaSearch } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
 
 function Header() {
   return (
@@ -12,12 +13,25 @@ function Header() {
         />
         <div className="flex items-center max-md:hidden">
           <ul className="flex font-semibold gap-7">
-            <li className="hover:text-[#ff6565] cursor-pointer">Home</li>
-            <li className="hover:text-[#ff6565] cursor-pointer">About</li>
-            <li className="hover:text-[#ff6565] cursor-pointer">Shop</li>
-            <li className="hover:text-[#ff6565] cursor-pointer">Blog</li>
-            <li className="hover:text-[#ff6565] cursor-pointer">Pages</li>
-            <li className="hover:text-[#ff6565] cursor-pointer">Contact</li>
+            <li className="hover:text-[#ff6565] cursor-pointer">
+              <Link to="/">Home</Link>
+            </li>
+            <li className="hover:text-[#ff6565] cursor-pointer">
+              <Link to="about">About</Link>
+            </li>
+            <li className="hover:text-[#ff6565] cursor-pointer">
+              <Link to="shop">Shop</Link>
+            </li>
+            <li className="hover:text-[#ff6565] cursor-pointer">
+              <Link to="blog">Blog</Link>
+            </li>
+            <li className="hover:text-[#ff6565] cursor-pointer">
+              <Link to="pages">Pages</Link>
+            </li>
+            <li className="hover:text-[#ff6565] cursor-pointer">
+              Contact
+              <Link to="contact">Contact</Link>
+            </li>
           </ul>
         </div>
       </div>
