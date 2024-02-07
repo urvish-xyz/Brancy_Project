@@ -20,6 +20,9 @@ function Header() {
               <Link to="about">About</Link>
             </li>
             <li className="hover:text-[#ff6565] cursor-pointer">
+              <Link to="PlusMinus">PlusMinus</Link>
+            </li>
+            <li className="hover:text-[#ff6565] cursor-pointer">
               <Link to="shop">Shop</Link>
             </li>
             <li className="hover:text-[#ff6565] cursor-pointer">

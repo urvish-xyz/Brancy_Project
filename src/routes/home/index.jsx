@@ -8,14 +8,14 @@ import JoinUs from '../../containers/JoinUs';
 
 function Home() {
   return (
-    <div className="container">
+    <>
       <Banner />
       <Categories />
       <TopSales />
       <ProductsDivider />
       <Blogs />
       <JoinUs />
-    </div>
+    </>
   );
 }
 

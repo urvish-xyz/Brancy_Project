@@ -1,11 +1,11 @@
 import React from 'react';
 import '../../style.css';
 import Products from './products';
-import ImageDiv from '../../components/ImageDiv';
+// import ImageDiv from '../../components/ImageDiv';
 
 function ProductsDivider() {
   return (
-    <div className="container flex flex-wrap items-center justify-center h-auto gap-10">
+    <div className="grid items-center justify-center grid-cols-1 gap-10 p-10 md:grid-cols-3 px-container">
       <Products
         ProductTitle="Readable content DX22"
         badge="new"
@@ -55,7 +55,7 @@ function ProductsDivider() {
         ScratchdPrice="300.00"
       />
 
-      <ImageDiv />
+      {/* <ImageDiv /> */}
 
       <Products
         ProductTitle="Readable content DX22"

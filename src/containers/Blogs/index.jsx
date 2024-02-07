@@ -11,7 +11,8 @@ function Blogs() {
           purus sit amet luctus venenatis
         </p>
       </div>
-      <div className="flex flex-wrap items-center justify-center w-full h-auto gap-10 max-lg:gap-3">
+      <div className="grid items-center justify-center grid-cols-1 gap-10 p-10 md:grid-cols-3 px-container">
+        {/* <div className="flex flex-wrap items-center justify-center w-full h-auto gap-10 max-lg:gap-3"> */}
         <BlogPost
           title="Lorem ipsum dolor sit amet consectetur adipiscing."
           bgcolor="beauty"

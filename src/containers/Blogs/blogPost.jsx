@@ -21,11 +21,11 @@ function BlogPost({ imageUrl, title, ProductBy, ProductDate, bgcolor }) {
   };
 
   return (
-    <div className="flex flex-col gap-3 mb-28 w-80 max-lg:mb-2">
-      <div className="overflow-hidden border-2 rounded-2xl max-sm:w-72">
+    <div className="flex flex-col gap-3 mb-28 max-lg:mb-2">
+      <div className="w-full overflow-hidden border-2 rounded-2xl">
         <div className="">
           <img
-            className="w-full transition duration-150 ease-out hover:scale-105"
+            className="w-[100%] transition duration-150 ease-out hover:scale-105"
             src={imageUrl}
             alt=""
           />

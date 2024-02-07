@@ -5,11 +5,11 @@ import Footer from '../containers/Footer';
 
 function DashboardLayout() {
   return (
-    <div>
+    <>
       <Header />
       <Outlet />
       <Footer />
-    </div>
+    </>
   );
 }
 
