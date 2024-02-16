@@ -7,7 +7,6 @@ function Card({ title, imageUrl, className, badge }) {
     switch (badge) {
       case 'new':
         return <p className="badge badge--red">{badge}</p>;
-
       case 'hot':
         return <p className="badge badge--green">{badge}</p>;
       case 'sale':
@@ -21,7 +20,7 @@ function Card({ title, imageUrl, className, badge }) {
   return (
     <div
       className={clsx(
-        'flex flex-col gap-4 items-center justify-center max-w-36 min-h-60 aspect-4/3 md:aspect-3/4 rounded-2xl flip-container relative max-lg:mt-7 ',
+        'container aspect-4/3 md:aspect-3/4 flex flex-col items-center justify-between bg-red-100 p-6 rounded-2xl relative flip-container',
         {
           [className]: !!className,
         },

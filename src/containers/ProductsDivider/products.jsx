@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
 import StarRating from '../../components/star-rating/StarRating';
+// import FavouriteIcon from '../../../public/icons/favourite.svg';
 
 // eslint-disable-next-line react/prop-types
 function Products({
@@ -28,14 +29,22 @@ function Products({
   };
 
   return (
-    <div className="relative">
-      <div className="w-full mb-5 overflow-hidden border-2 min-w-20 rounded-2xl max-sm:w-72">
-        <div className="w-full">
+    <div className="relative m-auto max-lg:w-72">
+      <div className="mb-5 overflow-hidden border-2 relativew-full min-w-20 rounded-2xl ">
+        <div className="relative w-full cart-show">
           <img
             className="w-full transition duration-150 ease-out hover:scale-105"
             src={imageUrl}
             alt=""
           />
+          <div className="absolute flex justify-between w-full px-2 mb-4 cart-btn">
+            <div className="">🔎</div>
+            <div className="bg-black">ADD TO CART</div>
+            <div className="">
+              {/* <FavouriteIcon /> */}
+              ❣️
+            </div>
+          </div>
         </div>
         <div>{displayBadge()}</div>
       </div>
